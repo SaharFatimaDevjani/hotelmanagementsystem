@@ -36,7 +36,7 @@ hotelmanagementsystem/
         └── Services/     Axios API client
 ```
 
-## What's Working
+## Features
 
 - **Auth flow**: register (`/users/register`) → login (`/auth/login`) → JWT stored in `localStorage` → attached via Axios interceptor → decoded client-side to route admins vs. customers.
 - **Room browsing & booking**: public room listing, booking form with date/payment-method validation, server-side overlap and availability checks, price calculation with per-room discount.
@@ -44,7 +44,6 @@ hotelmanagementsystem/
 - **Admin panel**: tabbed UI for managing rooms, users, and viewing all bookings, backed by full CRUD endpoints.
 - **Walk-in bookings**: a seeded `WALKIN` user (`DataInitializer`) lets admins book rooms for customers without an account (`POST /bookings/admin/book`).
 - **Validation & error handling**: `@Valid` on booking input, a `GlobalExceptionHandler` that turns exceptions into consistent JSON error responses.
-- **Builds cleanly**: `./mvnw compile` and `npm run build` both succeed with no errors.
 
 ## Getting Started
 
